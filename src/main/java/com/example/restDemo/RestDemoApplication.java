@@ -26,8 +26,7 @@ public class RestDemoApplication {
 	
 	@GetMapping("/submit")
 	public String formsubmit(UserModel user) {
-		return String.format("Hello %s %s", user.getName(),user.getSurname());
+		return "<h1 style='color:blue;text-align:center;'> Hello "+user.getName()+ " " + user.getSurname()+ " Welcome to Azure. <br>"+"<a href='/'><button>Go Back</button></a>";
 	}
 	
-	//This comment was inseted from the github upstream console.
 }
